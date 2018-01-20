@@ -21,10 +21,11 @@ Setup
 Download the gpack bash script to a local directory and make the file executable:
     
 .. code::
+
     wget https://raw.githubusercontent.com/GitPack/GitPack/master/gpack
     chmod u+x ./gpack
 
-Add repos to GpackRepos file using gpack:
+Add repos to GpackRepos file using gpack, an example is shown below:
 
 .. code::
 
