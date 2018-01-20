@@ -3,6 +3,7 @@ GitPack
 =====
 
 Python based git repository manager. Conceptually simular to a package manager like pip, rubygems, ect. GitPack handles the distrubuting of repositories without being tied to a specific language; although it does use python to execute commands. It specifically is designed to control multiple git repository dependancies on a multiple user project. The default behavior is to clone the repositories in a read-only mode, however this can be configured.
+
 * Clones multiple repositories in parallel.
 * Controls read-only permissions on cloned repositories.
 * Pulls multiple repositoires in parallel.
@@ -17,12 +18,17 @@ Structure
 
 Setup
 -----
+Download the gpack bash script to a local directory and make the file executable:
+    
+.. code::
+    wget https://raw.githubusercontent.com/GitPack/GitPack/master/gpack
+    chmod u+x ./gpack
 
 Add repos to GpackRepos file using gpack:
 
 .. code::
 
-    ./gpack add [url] [directory] [branch]
+    ./gpack add git@github.com:GitPack/GitPack.git ./GitPack
 
 Basic Usage
 -----
