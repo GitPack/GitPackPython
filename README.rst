@@ -41,7 +41,7 @@ Checkout a repo tag or add tag to a repo:
 
 Push local changes to remote on current branch:
 
-```
+.. code::
     ./gpack push [repo]
 
 GpackRepos
