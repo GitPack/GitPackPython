@@ -1,0 +1,14 @@
+#!/bin/bash
+
+url=
+
+#Pull the script from the main repo into a temp file
+tempfile=$(mktemp /tmp/gpack_XXXXX.zip)
+wget -O $tempfile $url &> /dev/null
+
+if [ ! -e $tempfile ]; then
+   echo "Error, was not able to fetch file $url"
+else
+   python3 $tempfile "$@"
+   rm $tempfile
+fi
