@@ -1,6 +1,6 @@
 #!/bin/bash
 
-url=
+url=https://raw.githubusercontent.com/GitPack/GitPack/master/gpack.zip
 
 #Pull the script from the main repo into a temp file
 tempfile=$(mktemp /tmp/gpack_XXXXX.zip)
