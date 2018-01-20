@@ -1,6 +1,14 @@
-=====
-GitPack
-=====
+# GitPack
+
+Python based git repository manager. Conceptually simular to a package manager like pip, rubygems, ect. GitPack handles the distrubuting of repositories without being tied to a specific language; although it does use python to execute commands. It specifically is designed to control multiple git repository dependances on a multiple user project.
+* Clones multiple repositories in parallel.
+* Controls read-only permissions on cloned repositories.
+* Pulls multiple repositoires in parallel.
+* Easy clean of repositories that do not have a clean git status.
+* Submodule compatible
+
+## Future improvements
+* GitPack is not Git LFS compatible at the moment. Merge requests with this feature would be accepted.
 
 Setup
 -----
