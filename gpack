@@ -4,10 +4,18 @@ url=https://raw.githubusercontent.com/GitPack/GitPack/master/gpack.zip
 
 #Pull the script from the main repo into a temp file
 tempfile=$(mktemp /tmp/gpack_XXXXX.zip)
+
+if ! wget "$url" &> /dev/null
+then
+	echo "Error $url not found"
+	exit
+fi
+
 wget -O $tempfile $url &> /dev/null
 
+
 if [ ! -e $tempfile ]; then
-   echo "Error, was not able to fetch file $url"
+   echo "Error, unable to create $tempfile. Check that you can write to this path or that the $url exists"
 else
    python3 $tempfile "$@"
    rm $tempfile
