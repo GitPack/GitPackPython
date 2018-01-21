@@ -5,4 +5,4 @@ cd ../
 ./make_zip > /dev/null
 cd ./test
 
-python3 ../gpack.zip
+python3 ../gpack.zip "$@"
