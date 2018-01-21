@@ -1,0 +1,2 @@
+rm -rf gpack.zip
+zip -r gpack.zip core scripts __init__.py __main__.py gpack.py
