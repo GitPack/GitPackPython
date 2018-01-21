@@ -5,10 +5,12 @@ url=https://raw.githubusercontent.com/GitPack/GitPack/master/gpack.zip
 #Pull the script from the main repo into a temp file
 tempfile=$(mktemp /tmp/gpack_XXXXX.zip)
 
-if ! wget "$url" &> /dev/null
+ 
+if curl --output /dev/null --silent --head --fail "$url"
 then
-	echo "Error $url not found"
-	exit
+    echo "Downloading latest gpack from $url"
+else
+    echo "Error URL $url Does Not Exist or is not reachable"
 fi
 
 wget -O $tempfile $url &> /dev/null
