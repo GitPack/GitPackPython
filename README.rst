@@ -16,6 +16,10 @@ Structure
 * ./GpackRepos - The main file that GitPack uses to store information about remote repositories URL, the local desitinations where the repositories should be cloned, and user configuration options like read-only, SSH keys, ect. This file is in YAML format
 * ./.gpacklock - Used to store the repository read-only status.
 
+Dependancies
+-----
+* Tested in Python 3.4.5
+
 Setup
 -----
 Download the gpack bash script to a local directory and make the file executable:
