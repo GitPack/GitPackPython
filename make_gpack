@@ -1,0 +1,8 @@
+#!/bin/bash
+rm -rf gpack.zip
+zip -r gpack.zip core scripts __init__.py __main__.py gpack.py
+
+git add -- ./gpack.zip
+git commit -m "Building gpack zip"
+
+git push origin
