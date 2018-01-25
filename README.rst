@@ -1,4 +1,10 @@
 =====
+UNDER DEVELOPEMENT. See Ruby implemementation for full functionality
+=====
+
+https://github.com/GitPack/GitPackRuby
+
+=====
 GitPack
 =====
 
